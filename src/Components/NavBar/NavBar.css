@@ -1,72 +1,53 @@
-/* .navbar {
+/* Navbar.css */
+
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 30px;
-    padding: 20px;
+    height: 55px;
+    background-color: transparent;
     display: flex;
-    justify-content: space-between;
-    background-image: linear-gradient(0deg, transparent, rgba(37, 37, 37, .61), #111);
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 8px 20px;
+    z-index: 1000; 
+    transition: background-color 0.1s; 
+}
+
+.navbar.scrolled {
+    background-color: #111;
+}
+
+
+.items {
+    display: flex;
+    color: white;
+    margin-left: 170px;
+}
+
+.items li{
+    display: flex;
+    text-decoration: none;
+    padding: 0 5px;
+    font-size: 14px;
 }
 
 .logo {
     position: fixed;
-    left: 20px;
-    width: 80px;
+    left: 40px;
+    width: 95px;
+}
+
+.rightItems {
+    display: flex;
+    color: white;
+}
+
+.rightItems p{
+    margin-right: 20px;
 }
 
 .avatar {
-    position: fixed;
-    right: 20px;
     width: 30px;
-} */
-
-
-/* CSS styles for the Netflix navbar clone */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 95%;
-    height: 30px;
-    background-image: linear-gradient(0deg, transparent, rgba(37, 37, 37, .61), #111);
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    width: 120px;
-}
-
-.links ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.links ul li {
-    display: inline-block;
-    margin-right: 20px;
-    color: #fff;
-    font-size: 18px;
-}
-
-.links ul li:last-child {
-    margin-right: 0;
-}
-
-.links ul li a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-.links ul li a:hover {
-    color: #b3b3b3;
-}
-
-.profile img {
-    width: 40px;
-    border-radius: 20%;
+    margin-right: 30px;
 }
